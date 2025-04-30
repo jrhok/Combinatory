@@ -6,11 +6,16 @@ import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import org.jetbrains.compose.ui.tooling.preview.Preview
+import org.pikouri.common.fab.AddElementFloatingActionButton
 
 @Composable
 @Preview
 fun App() = MaterialTheme {
-    Scaffold { innerPadding ->
+    Scaffold(
+        floatingActionButton = {
+            AddElementFloatingActionButton()
+        },
+    ) { innerPadding ->
         MainCanvas(modifier = Modifier.padding(innerPadding))
     }
 }
