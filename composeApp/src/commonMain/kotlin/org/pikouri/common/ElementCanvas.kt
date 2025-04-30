@@ -1,7 +1,6 @@
 package org.pikouri.common
 
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.draggable2D
 import androidx.compose.foundation.gestures.rememberDraggable2DState
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -13,7 +12,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
@@ -80,7 +78,7 @@ fun ElementCanvas(
     BoxWithConstraints(
         modifier = modifier
             .fillMaxSize()
-            .background(color = Color.Yellow),
+        ,
     ) {
         val boxWithConstraintsScope = this
         with(LocalDensity.current) {
