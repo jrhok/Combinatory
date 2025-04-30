@@ -1,4 +1,4 @@
-package org.pikouri.core
+package org.pikouri.common
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi

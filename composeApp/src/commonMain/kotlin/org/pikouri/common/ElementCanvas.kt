@@ -1,4 +1,4 @@
-package org.pikouri.core
+package org.pikouri.common
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -76,7 +76,7 @@ internal class ElementCanvasScopeInstance(
 @Preview
 fun ElementCanvas(
     modifier: Modifier = Modifier,
-    content: @Composable ElementCanvasScope.(Modifier) -> Unit
+    content: @Composable ElementCanvasScope.() -> Unit
 ) {
     BoxWithConstraints(
         modifier = modifier
@@ -93,7 +93,7 @@ fun ElementCanvas(
                     ),
                 )
             }
-            scope.content(Modifier.align(alignment = Alignment.TopStart))
+            scope.content()
         }
     }
 }
